@@ -2,16 +2,22 @@ AutoFileName: Autocomplete Filenames in Sublime Text
 =====================================================
 Do you ever find yourself sifting through folders in the sidebar trying to remember what you named that file? Can't remember if it was a jpg or a png? Maybe you just wish you could type filenames faster. *No more.*
 
-Whether your making a `img` tag in html, setting a background image in css, or linking a `.js` file to your html (or whatever else people use filename paths for these days...), you can now autocomplete the filename. Plus, it uses the built-in autocomplete, so no need to learn another *pesky* shortcut.
+Whether you're making an `img` tag in HTML, setting a background image in CSS, or linking a `.js` file to your HTML (or whatever else people use filename paths for these days...), you can now autocomplete the filename. Plus, it uses the built-in autocomplete (<kbd>Ctrl</kbd><kbd>Space</kbd>), so no need to learn another *pesky* shortcut.
+
+Installation
+------------
+You can manually clone this repo into Sublime Text's `Packages` directory (find it via `Preferences -> Browse Packages...`), but the easiest method is to [install](https://sublime.wbond.net/installation) and use [Package Control](https://sublime.wbond.net/). Hit <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>P</kbd> on Win/Lin, <kbd>⌘</kbd><kbd>Shift</kbd><kbd>P</kbd> on OSX, navigate to `Package Control: Install Package`, search for `AutoFileName` and you're all set!
 
 Usage
-=====
+-----
 If you are looking to autocomplete an image path in an HTML `<img>` tag:
     <img src="../|" />
 
-Pressing control+space, will activate AutoFileName.  I list of available files where be ready to select.
+Pressing <kbd>Ctrl</kbd><kbd>Space</kbd> will activate AutoFileName.  A list of available files will be ready to select.
 
-*Looking for an even more automatic and seemless completion?*  Add the following to your User Settings file:
+###*Looking for an even more automatic and seamless completion?*  
+
+Add the following to your User Preferences file (`Packages/User/Preferences.sublime-settings` or `Preferences -> Settings - User`):
     
     "auto_complete_triggers":
     [
@@ -25,4 +31,4 @@ Pressing control+space, will activate AutoFileName.  I list of available files w
       }
     ]
 
-With this, there's no need to worry about pressing control+space, autocompletion with appear upon pressing /.
+With this, there's no need to worry about pressing <kbd>Ctrl</kbd><kbd>Space</kbd>, autocompletion with appear upon pressing `/`.
